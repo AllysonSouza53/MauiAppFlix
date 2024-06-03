@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Filmes.velosesefuriosos"
+             Title="velosesefuriosos">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+Source="https://www.youtube.com/embed/oySHRt64xLk?si=qpzThEDY8GMWxraI" />
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+               x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                     Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                       Style="{StaticResource titulo}" />
+
+                    <Label Text="24 de junho de 2021"
+                       Style="{StaticResource textoTitulo}" />
+
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" />
+                    <Label Text="Justin Lin" Style="{StaticResource textoTitulo}" />
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" />
+
+                    <Label x:Name="sinopse" Text="Dominic Toretto e Letty vivem uma vida pacata ao lado do filho.
+                           Mas eles logo são ameaçados pelo passado de Dom: seu irmão desaparecido Jakob,
+                           que retorna e está trabalhando ao lado de Cipher. Cabe a Dom reunir a equipe novamente para enfrentá-los."
+                       FontSize="Medium" Padding="5" />
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
