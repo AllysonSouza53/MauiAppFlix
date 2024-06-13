@@ -46,4 +46,18 @@ public partial class Acao : ContentPage
             DisplayAlert("Não encontrado", ex.Message, "OK");
         }
     }
+
+
+    private void bntuncharted_Clicked(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Filmes.uncharted());
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Não encontrado", ex.Message, "OK");
+        }
+    }
 }

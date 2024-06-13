@@ -17,6 +17,9 @@
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1"
                              Source="espiaoemeio.jpg" x:Name="btnEspiao"
                              Clicked="btnEspiao_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1"
+                             Source="uncharted.jpg" x:Name="bntuncharted"
+                             Clicked="bntuncharted_Clicked"/>
             </Grid>
         </ScrollView>
     </VerticalStackLayout>
